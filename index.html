@@ -1,0 +1,72 @@
+<html class="ui-mobile-rendering">
+<head>
+
+    
+	<script src = "/quickforms/js/require.min.js" ></script>
+	<script src="js/json2.js"></script>
+	<link rel="stylesheet" href="css/blog.css" />
+	<link rel="stylesheet" href="/quickforms/css/quickforms/quickforms.css" />
+	
+	<style type="text/css">
+		body {margin:0;padding:0}
+	</style>
+	<script type="text/javascript">
+		require(['/quickforms/js/quickforms.js'],function(){
+			quickforms.registerReadyFunction(function()
+			{
+				require(['/js/blog.js','dom/navControl',
+						'dom/form/text','dom/form/upload','/js/color.js','dom/form/dynamicText'],
+					function(){
+						setCookie('userRole','Administrator',1);
+						quickforms.loadNav('header.html','navPlaceholder');
+						quickforms.parseForm({fact:'blogupdates',formId:'updateForm'});
+					});
+			});
+		});
+	</script>
+
+</head>
+	
+	<body >
+		<div id = "navPlaceholder"></div>
+		
+		<table id="table-2" align="center">
+			<thead><td class="headText" width = "25%">Welcome</td><td width = "75%" class="headText">News:</td></thead>
+			<tbody>
+			<tr height="600">
+
+				<td valign="top" id="welcomeText" align="center" style="border-width:1px;border-color:lightgray;border-style:solid">
+
+					<font face="georgia" size="2" ><p style="text-align:justify"> I am a 2nd year
+						masters student and web developer at the University of Ottawa.
+						I am in the process of organizing this website to showcase of all my
+						work, skills, certifications and achievements. This site is also a test bed 
+						for different technologies that I am learning throughout my masters program.
+						At the moment, this site is running via <u>quickforms</u>, which is an application framework
+						designed to help rapidly develop data entry applications.<br /><br />
+						I am constantly updating all of the content on this site, so check
+						back often for updates. </p></font>
+						<hr />
+						<input type = "button" onclick="$('#updateForm').toggle()" value = "Create Post" />
+						</td>
+
+				<td valign="top" >
+					<form id ="updateForm"  >
+						<table border="0"><tr><td><textarea name ="message" id="message" class="dynamicText"></textarea></td><td><div id="pictureDiv">.</div></td></tr></table>
+						Username : <input type="text" value = "" name="username" id="username" /> <br />
+						<label>Select files: <input name="files" id="files" type="file" multiple></label><input type = "button" value="Upload" onclick="uploadImage()"/>
+						<div id="uploading"><img src="/test/uploading.gif" ></img></div>
+						<br />
+						<input id="submitButton" type="button" value = "Submit" onclick="putBlogFact()"/>
+					</form>
+					<div id = "mainData"></div>
+				</td>
+
+			</tr>
+			
+			<tbody>
+		</table>
+		<br />
+		
+	</body>
+</html>

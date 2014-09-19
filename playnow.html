@@ -1,0 +1,104 @@
+<html class="ui-mobile-rendering">
+<head>
+    <title>Austin Chamney</title>
+	<script src = "/quickforms/js/require.min.js" ></script>
+	<link rel="stylesheet" href="css/blog.css" />
+	<link rel="stylesheet" href="/quickforms/css/quickforms/quickforms.css" />
+	<script type="text/javascript">
+	require(['/quickforms/js/quickforms.js'],function(){
+			quickforms.registerReadyFunction(function()
+			{
+				require(['dom/navControl','/js/color.js'],
+					function(){
+						quickforms.loadNav('header.html','navPlaceholder');
+						$('html').removeClass("ui-mobile-rendering");
+					});
+			});
+		});
+	</script>
+</head>
+	
+	<body >
+		<div id = "navPlaceholder"></div>
+
+		<table border="0" align="center" width="60%">
+			<tr>
+			<td valign="top"><a href="rts/RTS.html"><img
+						src="pics/banner1.jpg" /> </a></td>
+				<td align="center" width="100%">
+					<div class="redBox" id="movable">
+						<h1>Click on any of the games below</h1>
+					</div> <br />
+
+					<div class="blueBox movable">
+						<div class="gametitle"> WonsCraft </div>
+						<div class="inbox">
+							<a href="/wonscraft/wonscraft.html"> <img
+								src="wonscraft/wonscraft.png" align="center" border="0" width="300"
+								height="200" /> </a>
+						</div>
+					</div> <br />
+					
+					<div class="blueBox movable">
+						<div class="gametitle"> Gravity Game </div>
+						<div class="inbox">
+							<a href="/GravityGame/GravityGame.html"> <img
+								src="pics/gravico.png" align="center" border="0" width="300"
+								height="200" /> </a>
+						</div>
+					</div> <br />
+					
+					<div class="blueBox movable">
+						<div class="gametitle"> Amoeba </div>
+						<div class="inbox">
+							<a href="Amoeba/Amoeba.html"> <img
+								src="pics/amoeba.PNG" align="center" border="0"  /> </a>
+						</div>
+					</div> <br />
+					
+					<div class="blueBox movable">
+						<div class="gametitle"> Asteroids </div>
+						<div class="inbox">
+							<a href="Asteroids/Asteroids.html"> <img
+								src="pics/asteroid.gif" align="center" border="0" width="300"
+								height="200" /> </a>
+						</div>
+					</div> <br />
+
+					<div class="blueBox movable">
+						<div  class="gametitle">Element</div>
+						<div class="inbox">
+							<a href="rpg/RPG.html">
+								<img src="pics/element2.jpg" align="center" border="0" /> </a>
+						</div>
+					</div> <br />
+
+					<div class="blueBox movable">
+						<div class="gametitle">Pokemon </div>
+						<div class="inbox">
+							<a href="http://www.angelfire.com/droid/game0/poke/poke.html">
+								<img src="pics/pmicon.png" align="center" border="0" /> </a>
+						</div>
+					</div> <br />
+
+					<div class="blueBox movable">
+						<div class="gametitle">Madness</div>
+						<div class="inbox">
+							<a href="http://www.angelfire.com/droid/game0/mad/madness.html">
+								<img src="pics/madicon.gif" align="center" border="0" /> </a>
+						</div>
+					</div> <br />
+
+					<div class="blueBox movable">
+						<div class="gametitle">AustinHammer</div>
+						<div class="inbox">
+							<a href="/rts/RTS.html"> <img src="pics/ahicon.jpg"
+								align="center" border="0" /> </a>
+						</div>
+					</div> <br /></td>
+				
+			</tr>
+		</table>
+	</h:body>
+</f:view>
+</html>

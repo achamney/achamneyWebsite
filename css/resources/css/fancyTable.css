@@ -1,0 +1,79 @@
+table.greenTable{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.greenTable thead th{
+    padding:15px;
+	font-size: 20px;
+    color:#fff;
+    text-shadow:1px 1px 1px #23238F;
+    border:1px solid #3737CE;
+    border-bottom:3px solid #2929D9;
+    background-color:#2929D9;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(67,67,192)),
+        color-stop(0.51, rgb(66,66,198)),
+        color-stop(0.87, rgb(41,41,217))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(67,67,192) 2%,
+        rgb(66,66,198) 51%,
+        rgb(41,41,217) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.greenTable tfoot td{
+    color: #D0D009;
+    font-size:32px;
+    text-align:center;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.greenTable tfoot th{
+    color:#666;
+}
+.greenTable tbody td{
+    padding:10px;
+    text-align:center;
+    background-color:#CFCFFF;
+    border: 2px solid #B0B0EF;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#000;
+	font-size: 16px;
+    text-shadow:1px 1px 1px #fff;
+}
+
+table.formTable{
+	font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4em;
+    font-style: normal;
+    color:#000;
+    background-color:#fff;
+    border:0px;
+}
+
+.formTable td{
+	padding:5px;
+	vertical-align:top;
+}
+
+.formTable input{
+	font-size: 16px;
+}
+

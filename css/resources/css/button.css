@@ -1,0 +1,52 @@
+.button{
+   
+    /* You need to set font, font size and cursor for buttons */
+    font-size: 15px;
+    font-family: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana;
+    cursor: pointer;
+	font-weight: bold;
+}
+.button{
+	 /* Disables default styling */
+    border: none;
+    background: #333333;
+    color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    padding: 8px 13px;
+    border-radius: 5px;
+    
+    box-shadow:
+	0 0 0 1px #1169B0 inset, /* Outer bevel */
+	0 0 0 2px #1169B0 inset, /* Inner bevel */
+	0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+	1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+
+    -webkit-border-radius: 5px;
+    -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow:
+	0 0 0 1px #1169B0 inset, /* Outer bevel */
+	0 0 0 2px #1169B0 inset, /* Inner bevel */
+	0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+	1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+}
+div.fileinputs {
+	position: relative;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+input.file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}

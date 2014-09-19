@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<script src = "require.js" data-main="game" ></script>
+
+
+	</head>
+	<body> 
+		
+		<div width = "801" style = "position:relative;" >
+			<canvas id="pilot" width = "800" height = "600" onclick="startGame();"></canvas>
+			<!--<div style="position: absolute;left:800px;top:0px" id = "controls">
+				<h1>Controls:</h1>
+				<ul><li>Left / Right : Rotate Ship</li>
+				<li>Up / Down : Accelerate / Decelerate</li>
+				<li>1, 2, 3, 4 : Fire!</li>
+				</ul>
+			</div>-->
+			<canvas id="crew" width = "800" height = "600" onclick="startGame();"></canvas>
+			
+		</div>
+		
+	</body>
+</html>

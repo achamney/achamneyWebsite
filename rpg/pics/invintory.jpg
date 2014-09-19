@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+  <head>
+    <title>Angelfire - Webshell</title>
+    <link rel="icon" href="/favicon.ico" type="image/bmp" />
+    <link rel="stylesheet" type="text/css" href="/doc/css/af.css" />
+
+   	<script language="javascript" type="text/javascript">
+		<!--
+		//fixes image submits in ie
+		function changeAction(newName){
+			f = document.forms.changeform;
+			f.action.value = newName;
+    		f.action.name = newName;
+		}
+		
+    	function load_page(url)
+    	{ 
+        	//this loads a non-image file with a "Loading..." status message
+        	var sHTML = '<'+'html><'+'body>';
+        	sHTML += 'Loading....<br />';
+        	sHTML += '<'+'/body><'+'/html>';
+        	var ifrDS = window.frames['iframeDS'];
+        	ifrDS.document.write(sHTML);
+        	ifrDS.document.close();
+
+        	//image trick
+        	var page = new Image();
+        	page.onerror = function(){ //this will be triggered since we're about to load a non-image file
+                           ifrDS.location.replace(url); //change iframe src
+                       }
+        	page.src = url; //the browser tries it to load, in effect preloading it
+    	}
+	    //-->
+	</script>
+
+
+    <script type="text/javascript">
+var cm_role = "live";var cm_host = "angelfire.lycos.com";
+var cm_taxid = "/build";
+</script>
+<script type="text/javascript" src="http://scripts.lycos.com/catman/init.js"></script>
+<script type="text/javascript">
+var objAdMgr = new AdManager();
+var strProdSetName = objAdMgr.chooseProductSet(); objAdMgr.renderHeader();
+</script>
+<script type="text/javascript" src="/doc/js/functions.js"></script>
+<script src="http://hb.lycos.com/hb.js?site=angelfire" type="text/javascript"></script>
+  </head>
+  <body><!-- /* this file may not be needed anymore to remove latter */   -->
+<script type="text/javascript">
+    lhb_drawHeader();
+</script>
+<noscript>
+    <iframe src="http://hb.lycos.com/hb.php?site=angelfire" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" width="100%" height="50"></iframe>
+</noscript>
+
+    <div id="container2">
+      <div id="hdr">
+      <div style="float: left;">
+        <a href="http://www.angelfire.lycos.com"><img src="http://af.lygo.com/d/common/logo.gif" alt="Angelfire" width="250" height="73" border="0"  /></a>
+      </div>
+
+      <table border="0" style="font-size: inherit; font-family: inherit; margin-top: 5px; float: right" cellspacing="0" cellpadding="0">
+	<tr>
+			<td style="padding-bottom: 13px; padding-right: 4px" align="right">
+                                				<script type="text/javascript">
+				if (objAdMgr && objAdMgr.isSlotAvailable("headerbar")) {
+				  objAdMgr.renderSlot("headerbar");
+				} else {
+	                          document.write('<img src="http://af.lygo.com/i/dot.gif" alt="dot" border="0" height="22"/>');
+	                        }
+				</script>
+	                        <noscript>
+	                        
+	                        	<img src="http://af.lygo.com/i/dot.gif" alt="dot" border="0" height="22"/>
+                                	                        </noscript>
+	                                                 
+	                </td>
+	</tr>
+        <tr>
+          <td valign="middle" nowrap="nowrap">
+                      <table id="login" style="font-size: inherit; font-family: inherit; margin-top: 0px;" cellspacing="0" cellpadding="0">
+            <tr><td valign="top" nowrap="nowrap">
+            
+                            <form name="form1" action="http://www.angelfire.lycos.com/auth/logout" method="post" class="inline">
+		                        Hello, droid/game0!&nbsp;
+                   <input type="image" src="http://af.lygo.com/d/common/logout.gif" 
+		           style="width:92px; height:22px; vertical-align: middle" alt="log out"   />
+                </form>
+                        </td></tr></table>
+                      </td>
+        </tr>
+      </table>
+</div>
+      <div id="nav">
+	<div class="navN"><a href="/" class="navNtxt"><span class="navHt">Home</span></a></div>
+	<div class="navN"><a href="/adm/redirect/www/cgi-auth/membership/my_account" class="navNtxt"><span class="navHt">My Account</span></a></div>
+<div class="navN"><a href="/adm/redirect/www/subscribe/index.tmpl" class="navNtxt"><span class="navHt">Subscribe</span></a></div>
+	<div class="navN"><a href="/adm/redirect/www/build/index.tmpl" class="navNtxt"><span class="navHt">Build</span></a></div>
+	<div class="navN"><a href="/adm/redirect/www/howto/index.tmpl" class="navNtxt"><span class="navHt">How To</span></a></div>
+	<div class="navY"><a href="/adm/redirect/www/cgi-auth/webshell" class="navYtxt"><span class="navHt">Web Shell</span></a></div>
+	<div class="navN"><a href="/adm/redirect/blog/service/blog/control.blog?a=manage" class="navNtxt"><span class="navHt">Blog Builder</span></a></div>
+	<div class="navN"><a href="/adm/redirect/photo" class="navNtxt"><span class="navHt">Photo Album</span></a></div>
+	<div class="navN"><a href="/adm/redirect/planet/" class="navNtxt"><span class="navHt">Planet</span></a></div>
+	<div class="navN"><a href="/adm/redirect/www/directory/index.tmpl" class="navNtxt"><span class="navHt">Directory</span></a></div>
+	<div class="navN"><a href="/adm/redirect/www/paypal/index.tmpl" class="navNtxt"><span class="navHt">PayPal</span></a></div>
+	<div class="navN"><a href="/adm/redirect/www/shop/index.tmpl" class="navNtxt"><span class="navHt">Shop</span></a></div>
+<div class="navN"><a href="http://www.lycos.playp.biz/mobringtones/Default.aspx? 
+StoreFrontID=0006-0006-2000-0001" class="navNtxt"><span class="navHt">Ringtones</span></a></div>
+	<div class="navN"><a href="#" onclick="newWin('http://help.lycos.com/angelfire','800', '600'); return false;" class="navNtxt"><span class="navHt">Help</span></a></div>
+</div>
+      <div id="main2">
+        <div id="mainDir2">
+		  <div class="crummy"><a href="/">Home</a> &gt; <b>Web Shell</b></div>
+          <div class="subhead4">web shell</div>
+
+<table cellpadding="1" cellspacing="0" border="0">
+	<tr valign="top">
+		<td width="473">
+		<b>USERNAME:</b> droid/game0<br />
+		<b>WEBSITE:</b> <a target="new" href="http://www.angelfire.com/droid/game0">http://www.angelfire.com/droid/game0</a>
+		<form method="post" action="/cgi-auth/webshell" name="changeform" id="changeform">
+		<div class="subsubhead">
+		File Management
+		</div>
+		Welcome to the Web Shell, wonsleved_dth@hotmail.com.
+			<table cellpadding="6" cellspacing="0" border="0" width="100%">
+				<tr>
+				<td bgcolor="#cccccc">
+					<input type="hidden" name="currentDir" value="" />
+					<input type="hidden" name="action" value="action" />
+					<span style="font-weight: bold; color: #444">FILES:</span>
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/view.gif"  name="view" value="view" onclick="changeAction('view')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/edit.gif" name="edit" value="edit" onclick="changeAction('edit')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/rename.gif" name="rename" value="rename" onclick="changeAction('rename')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/move.gif"  name="move" value="move" onclick="changeAction('move')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/duplicate.gif"  name="copy" value="duplicate" onclick="changeAction('copy')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/delete.gif"  name="delete" value="delete" onclick="changeAction('delete')" />
+					<br />
+					<span style="font-weight: bold; color: #444">DIRECTORIES:</span>
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/open.gif" name="openDir" value="Open directory" onclick="changeAction('openDir')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/rename.gif" name="rename" value="rename" onclick="changeAction('rename')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/delete.gif" name="delete" value="delete" onclick="changeAction('delete')" />
+					</td>
+				</tr>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td><img src="http://af.lygo.com/i/1x1.gif" width="1" height="1" alt="" /></td>
+				</tr>
+			</table>
+			<table cellpadding="6" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td bgcolor="#cccccc">
+					<span style="font-weight: bold; color: #444">You are here:</span> <b>/droid/game0
+</b><br />
+					<a href="/cgi-auth/webshell?currentDir=&amp;ascendDir=1"><img src="http://af.lygo.com/i/up.gif" alt="up" width="21" height="10" border="0" hspace="0" vspace="0" /></a> Sort by: <a href="/cgi-auth/webshell?currentDir=&amp;sort=name">Name</a> | <a href="/cgi-auth/webshell?currentDir=&amp;sort=size">Size</a> | <a href="/cgi-auth/webshell?currentDir=&amp;sort=date">Date Modified</a>
+					<br clear="all" />
+					<select name="files" size="5" multiple="multiple">
+					<option value="/game1">  /game1 (12k) 11/27/2004 </option>
+<option value="/images">  /images (0.00k) 11/27/2004 </option>
+<option value="/pics">  /pics (2.12M) 11/28/2004 </option>
+<option value="/rpg">  /rpg (2.89M) 11/28/2004 </option>
+<option value="/sounds">  /sounds (632k) 11/27/2004 </option>
+<option value="AnimSequence.class">  AnimSequence.class (0.65k) 11/28/2004 </option>
+<option value="AnimSequence.java">  AnimSequence.java (0.68k) 11/28/2004 </option>
+<option value="BadGuy.class">  BadGuy.class (5k) 11/28/2004 </option>
+<option value="BadGuy.java">  BadGuy.java (6k) 11/28/2004 </option>
+<option value="Drawing.class">  Drawing.class (7k) 11/28/2004 </option>
+<option value="Drawing.java">  Drawing.java (7k) 11/28/2004 </option>
+<option value="Drawing_Bleed.class">  Drawing_Bleed.class (0.23k) 11/27/2004 </option>
+<option value="Drawing_BulletActions.class">  Drawing_BulletActions.class (0.35k) 11/27/2004 </option>
+<option value="Drawing_Guns.class">  Drawing_Guns.class (0.31k) 11/27/2004 </option>
+<option value="Test.class">  Test.class (20k) 11/28/2004 </option>
+<option value="Test.java">  Test.java (31k) 11/28/2004 </option>
+<option value="Test2.class">  Test2.class (1k) 11/27/2004 </option>
+<option value="Test2.java">  Test2.java (0.91k) 11/27/2004 </option>
+<option value="Test_Keys.class">  Test_Keys.class (0.44k) 11/27/2004 </option>
+<option value="a.gif">  a.gif (3k) 11/27/2004 </option>
+<option value="classpath">  classpath (0.23k) 11/28/2004 </option>
+<option value="coordinates.class">  coordinates.class (0.46k) 11/27/2004 </option>
+<option value="coordinates.java">  coordinates.java (0.50k) 11/27/2004 </option>
+<option value="game.html">  game.html (0.09k) 11/28/2004 </option>
+<option value="game2.html">  game2.html (0.09k) 11/27/2004 </option>
+<option value="index.html">  index.html (4k) 11/28/2004 </option>
+<option value="java.policy.applet">  java.policy.applet (0.14k) 11/28/2004 </option>
+<option value="project">  project (0.37k) 11/28/2004 </option>
+<option value="test.html">  test.html (0.53k) 11/28/2004 </option>
+					</select>
+					</td>
+				</tr>
+			</table>
+                        <!-- Second set of buttons below the file list -->
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td><img src="http://af.lygo.com/i/1x1.gif" width="1" height="1" alt="" /></td>
+				</tr>
+			</table>
+			<table cellpadding="6" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td bgcolor="#cccccc">
+					<span style="font-weight: bold; color: #444">FILES:</span>
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/view.gif" name="view" value="view" onclick="changeAction('view')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/edit.gif" name="edit" value="edit" onclick="changeAction('edit')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/rename.gif" name="rename" value="rename" onclick="changeAction('rename')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/move.gif" name="move" value="move" onclick="changeAction('move')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/duplicate.gif" name="copy" value="duplicate" onclick="changeAction('copy')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/delete.gif" name="delete" value="delete" onclick="changeAction('delete')" />
+					<br />
+					<span style="font-weight: bold; color: #444">DIRECTORIES:</span>
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/open.gif" name="openDir" value="Open directory" onclick="changeAction('openDir')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/rename.gif" name="rename" value="rename" onclick="changeAction('rename')" />
+					<input type="image" align="middle" src="http://af.lygo.com/d/ws_b/delete.gif" name="delete" value="delete" onclick="changeAction('delete')" />
+					</td>
+				</tr>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td><img src="http://af.lygo.com/i/1x1.gif" width="1" height="1" alt="" /></td>
+				</tr>
+			</table>
+			<table cellpadding="6" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td bgcolor="#cccccc">
+					<span style="font-weight: bold; color: #444">Create:</span> <input type="radio" name="new" value="file" checked="checked" /> New File <input type="radio" name="new" value="directory" /> New Subdirectory<br />
+					File/Subdirectory Name:<br />
+					<input type="text" name="newfile" size="25" maxlength="100" /><br />
+					<input type="image" name="create" value="Create" src="http://af.lygo.com/d/ws_b/create.gif" onclick="changeAction('create')" />
+					</td>
+				</tr>
+			</table>
+			</form>
+			<br />
+			<form enctype="multipart/form-data" method="post" action="/cgi-auth/upload.pl">
+			<div class="subsubhead">
+			File Upload
+			</div>
+			<input type="hidden" name="action" value="upload" />
+			<input type="hidden" name="numimages" value="1" />
+			<input type="hidden" name="currentDir" value="" />
+			Select a file to upload: <a href="#" onclick="newWin('http://help.lycos.com/angelfire',600, 600);">(Learn More)</a>
+			<br />
+			<input type="file" name="fileupload0" size="25" />
+			<br />
+			<input type="submit" name="upload" value="Upload" /> <input type="checkbox" align="middle" name="overwrite0" value="y" />Check to overwrite
+			<br />
+			<a href="/cgi-auth/webshell?currentDir=&amp;showMultiUpload=1">Upload multiple files</a>
+			</form>
+			<form action="/cgi-auth/transload" method="post">
+			<div class="subsubhead">
+			Transloader
+			</div>
+
+			<input type="hidden" name="source" value="webshell" />
+			<input type="hidden" name="currentDir" value="" />
+			Copy images from anywhere on the Web into your member directory.
+			<a href="#" onclick="newWin('http://help.lycos.com/angelfire',600, 600);">(Learn More)</a>
+			<br />
+			File URL:<br />
+			<input size="25" name="url" value="http://" /><br /><br />
+			File name (optional):<br />
+			<input name="filename" size="30" /><br />
+			<span style="color: #f00">Include file extension! (.html, .gif, etc.)</span><br />
+			<input type="submit" value="Move it!" /><input align="middle" type="checkbox" name="overwrite" /> Check to overwrite
+			</form>
+			</td>
+			<td width="14"><img src="http://af.lygo.com/i/1x1.gif" width="14" height="1" alt="" /></td>
+			<td width="140">
+
+			<div class="subsubhead">
+			Disk Space
+			</div>
+
+			<div style="padding: 0px 5px 5px 0px">
+    		<iframe name="iframeDS" src="/membership/diskSpaceCall.tmpl" width="140" height="55" scrolling="no" marginwidth="0" marginheight="0" frameborder="0">If you can see this, your browser doesn't understand IFRAME. However, we'll still <a href="/cgi-auth/membership/diskSpace">link</a> you to the information. 
+    		</iframe>
+			<a href="/cgi-auth/membership/pref_link?to=upgrade">Upgrade</a> your Angelfire account to receive more disk space.
+			</div>
+
+			<br />
+			<div class="subsubhead">
+			Did You Know?
+			</div>
+			<div style="padding: 0px 5px 5px 0px">
+                If you want to add a pop-up window to your site, Webmonkey can show you 
+ <a href="http://webmonkey.com/98/03/index3a_page3.html">how</a>.
+			</div>
+
+			<br />
+			<div class="subsubhead">
+			Tool Center
+			</div>
+			<div style="padding: 0px 5px 5px 0px">
+			<a href="/build/index.tmpl">Build</a><br />
+			<a href="/howto/index.tmpl">How To</a><br />
+			<a href="/build/htmllib/index.tmpl">HTML Library</a><br />
+			<a href="/build/scriptlib/index.tmpl">Script Library</a><br />
+			<a href="#" onclick="window.open('/doc/clipboard.html', 'Clipboard', 'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,width=380,height=300');return false;">Code Clipboard</a><br />
+			<a target="_blank" href="http://webmonkey.com/">Webmonkey</a><br />
+			<a href="/adm/redirect/domains/">Get a Domain!</a><br />
+			<a href="/build/fpfaq.tmpl">Microsoft FrontPage&reg;</a><br />
+			<a href="/imagebrowser/index.tmpl">Image Gallery</a><br />
+			<a href="/directory/index.tmpl">Browse</a><br />
+			<a href="/cgi-auth/membership/pref_link?to=upgrade">Upgrade</a><br />
+			<a href="/paypal/index.tmpl">PayPal</a><br />
+			<a href="/cgi-auth/membership/my_account?webshell_prefs=1">Configure Appearance</a>
+			</div>
+		</td>
+	</tr>
+</table>
+
+        </div>
+      </div>
+      <br clear="all" />
+      <script type="text/javascript">
+objAdMgr.renderFooter();
+</script>
+        <div id="footer">
+  <span style="font-weight: bold; color: #444444;">Angelfire:</span> <a href="/adm/redirect/www/subscribe/index.tmpl" class="a2">Subscribe</a> | <a href="/adm/redirect/www/directory/index.tmpl" class="a2">Member Sites</a> | <a href="http://info.lycos.com/legal/legal.asp" class="a2">Rules</a> | <a href="http://help.lycos.com/angelfire" class="a2">Angelfire Help</a> | <a href="/adm/redirect/www/aboutaf.tmpl" class="a2">About Angelfire</a> | <a href="http://help.lycos.com/newticket.php" class="a2">Report Angelfire Abuse</a> | <a href="/adm/redirect/www/site_map/" class="a2">Catalog</a> | <a href="http://www.tripod.lycos.com/site_map/" class="a2">Tripod Catalog</a><br />
+ <span style="font-weight: bold; color: #444444;">Lycos:</span> <span style="font-size: 10px; color: #444444;"><a href="http://info.lycos.com/lycosinfo.asp" class="a3">About Lycos</a> | <a href="http://help.lycos.com/" class="a3">Help</a> | <a href="http://info.lycos.com/jobs/jobs.asp" class="a3">Jobs</a> | <a href="http://advertising.lycos.com/contactus.html" class="a3">Advertise</a> | <a href="http://www.lycos.com/sitemap.asp" class="a3">Site Map</a> | <a href="http://info.lycos.com/privacy/privacy.asp" class="a3">[Updated] Privacy Policy</a> |  <a href="http://info.lycos.com/legal/legal.asp" class="a3">Terms &amp; Conditions</a>
+<br />&copy;  <a href="http://info.lycos.com/legal/legal.asp#copy" target="_blank" title="Copyright">Copyright</a> 2006, Lycos, Inc. Lycos is a registered trademark of Lycos, Inc. All Rights Reserved.</span>
+<script type="text/javascript">
+ var if_Site_ID="lycos";
+ var if_sid=3;
+ var mep1="&site=angelfire&section=other";
+</script>
+<script type="text/javascript" defer="defer" src="http://lycos.247realmedia.com/scripts/lycos_if.js"></script>
+<noscript>
+<img src="http://lycos.247realmedia.com/data/?tax0_SiteID=3&amp;nojs=true" alt="" />
+</noscript>
+</div>
+<script type="text/javascript">
+objAdMgr.renderFooter();
+</script>
+    </div>
+  </body>
+</html>

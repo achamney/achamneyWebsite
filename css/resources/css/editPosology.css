@@ -1,0 +1,22 @@
+.col1 {width = 20px;
+	
+}
+
+.col2 {width = 200px;
+	
+}
+
+.colHeader1 {width = 300px;
+	
+}
+
+.colHeader2 {width = 100px;
+	
+}
+
+.group_list {
+	border-style:solid;
+	border-width: 1px;
+	height: 140px;
+	overflow: auto;
+}

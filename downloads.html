@@ -1,0 +1,80 @@
+<html class="ui-mobile-rendering">
+<head>
+    <title>Austin Chamney</title>
+	<script src = "/quickforms/js/require.min.js" ></script>
+	<link rel="stylesheet" href="css/blog.css" />
+	<link rel="stylesheet" href="/quickforms/css/quickforms/quickforms.css" />
+	<style type="text/css">
+		body {margin:0;padding:0; }
+		#table-2 ul { padding: 0px; margin:0;}
+		#table-2 li { padding: 0px; margin:0; list-style-type: none;}
+		#table-2 li a { margin: 0px; display: block; width: 100%; height: 100%; color:black; TEXT-DECORATION: NONE;}
+		#table-2 li a:hover { margin: 0px; display: block; width: 100%; height: 100%; color:black; background-color:white}
+	</style>
+	<script type="text/javascript">
+	require(['/quickforms/js/quickforms.js'],function(){
+			quickforms.registerReadyFunction(function()
+			{
+				require(['dom/navControl','/js/color.js'],
+					function(){
+						quickforms.loadNav('header.html','navPlaceholder');
+						$('html').removeClass("ui-mobile-rendering");
+					});
+			});
+		});
+	</script>
+</head>
+	
+	<body >
+		<div id = "navPlaceholder"></div>
+		
+		<table id="table-2" align="center">
+			<thead><td class="headText">Downloads </td></thead>
+			<tbody>
+			<tr >
+				<td valign="top" >
+					<ul>
+					<li>
+					<a href = "/test/Austin.pdf"><h3>Resume</h3>
+					Just for interested employers ;)</a>
+					<hr />
+					</li>
+					<li>
+					<a href = "/test/wonscraft/wonscraft.zip"><h3>Wonscraft Client/Server</h3>
+					To try out some 3D Java development, I decided to create a first person shooter using the Light Weight Java Game Library(LWJGL),
+					I had lots of fun with real time networking, and dynamic world generation a la Minecraft. This application is not meant as a full
+					fledged game that is playable from start to finish, but rather a proof of concept and a design challenge. </a>
+					<hr />
+					</li>
+					<li>
+					<a href ="/test/WaterFlowTextureMaker.exe"><h3>Water Flow Texture Maker</h3>
+					In 4th year game dev, everyone was given the opportunity to program a custom shader design of their choice. I was interested in water
+					effects, and the professor Wilf Lalonde wanted a quick program that would allow for a spatial vector representation of the direction the
+					water should flow. The tool was useful, and gave me an A+ in the class, but its mostly interesting because it makes pretty pictures.
+					<hr />
+					</li>
+					<li>
+					<a href = "century.zip"><h3>Century Club</h3>
+					This little windows executable called to the need of party goers who want to play a drinking game called century club, and 
+					listen to music at the same time. When the application starts, you are prompted to point to your music directory. Then the 
+					timer starts and begins your playlist. Every 60 seconds, an audio cueue is played, and the next song is played.</a>
+					<hr />
+					</li>
+					<li>
+					<a href = "/test/Final_Nightfall9.zip"><h3>Final Nightfall</h3>
+					This was my first DirectX game that I made back in grade 11. I didn't know any trigonometry or complex math that would have 
+					made my life a lot easier programming this game. So basically it looks like crap. My crowning achievement of this game though
+					are the half decent looking meshes I made using 3DS Max and this crappy free .x mesh editor. </a>
+					<a href="http://wonsleved.tripod.com/FinalNightfall/final_nightfall.htm" style="color:blue">Final Nightfall Blog</a>
+					<hr />
+					</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tbody>
+		</table>
+		<br />
+		
+	</body>
+</html>

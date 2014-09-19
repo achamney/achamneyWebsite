@@ -1,0 +1,13 @@
+
+.group_list {
+	border-style:solid;
+	border-width: 1px;
+	overflow: auto;
+}
+.columnOne{
+	width: 75%;
+}
+.columnTwo{
+	width: 25%;
+}
+

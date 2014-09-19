@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<script src = "require.js" data-main="mapper" ></script>
+
+
+	</head>
+	<body > 
+		
+		<div width = "801" style = "position:relative;" >
+			<canvas width = "800" height = "600" onclick="paint();" id ="mapper"></canvas>
+			
+		</div>
+		<br/>
+		<button onclick="undo()">Undo</button><button onclick="mirror()">YMirror</button><br />
+		<div id="pointText"></div><br />
+		<input type = "text" id="inputPoints" size="100"/><button onclick="inputPoints()">Input Points</button>
+	</body>
+</html>
