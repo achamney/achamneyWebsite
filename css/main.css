@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'open sans';
+    src: url('/css/OpenSans.ttf');
+}
+body
+{
+	margin:0px;
+	background: #DDDDDD;
+	font:14px Georgia, "Times New Roman", Times, serif;
+}
+a:link {
+  text-decoration: none;
+	color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.backdrop {
+	font-family: 'open sans';
+	height:35vw;
+}
+.backdrop img {
+	position:absolute;
+	z-index: -1;
+}
+.backdrop .backtext {
+	float: right;
+	width:37vw;
+	padding-top: 10vw;
+}
+.backdrop .backname {
+	font-size: 2vw;
+	animation: fadeInFast 3s;
+}
+.backdrop .backdesc {
+	font-size: 3vw;
+	animation: fadeInSlow 6s;
+}
+.portfolioTitleContainer {
+	padding: 0.5vw;
+	text-align: center;
+	font-size: 2.3vw;
+	font-family: 'open sans';
+	background-color: #35BDCC;
+}
+.game {
+	padding: 0 2vw 0 2vw;
+}
+.game h2 {
+	font-size:3vw;
+}
+.game p {
+	font-size: 2vw;
+}
+.game img {
+	width: 100%;
+	max-width: 1000px;
+}
+@keyframes fadeInFast {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeInSlow {
+  0% { opacity: 0; }
+	20% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeInSlower {
+  0% { opacity: 0; }
+	40% { opacity: 0; }
+  100% { opacity: 1; }
+}
