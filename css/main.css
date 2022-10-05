@@ -1,36 +1,37 @@
 @font-face {
     font-family: 'open sans';
-    src: url('/css/OpenSans.ttf');
+    src: url('OpenSans.ttf');
 }
 body
 {
 	margin:0px;
 	background: #DDDDDD;
-	font:14px Georgia, "Times New Roman", Times, serif;
 }
-a:link {
+.game a:link {
   text-decoration: none;
 	color: black;
 }
-a:hover {
+.game a:hover {
   text-decoration: underline;
 }
-a:visited {
+.game a:visited {
   text-decoration: none;
 }
 
 .backdrop {
 	font-family: 'open sans';
-	height:35vw;
-}
-.backdrop img {
-	position:absolute;
-	z-index: -1;
+	height:45vw;
+  max-height: 700px;
+  display: flex;
+  background-color: white;
 }
 .backdrop .backtext {
 	float: right;
-	width:37vw;
+	width:40vw;
 	padding-top: 10vw;
+}
+.backdrop img {
+  object-fit: cover;
 }
 .backdrop .backname {
 	font-size: 2vw;
@@ -43,22 +44,99 @@ a:visited {
 .portfolioTitleContainer {
 	padding: 0.5vw;
 	text-align: center;
-	font-size: 2.3vw;
+	font-size: 2vw;
 	font-family: 'open sans';
 	background-color: #35BDCC;
 }
+.portfolioTitleContainer p {
+  display: inline-block;
+  margin: 10px 0;
+}
+.accordionContainer {
+  transition: top 0.5s, max-height 0.5s;
+  position: relative;
+  top:0px;
+  max-height:9999px;
+  overflow: hidden;
+}
+.accordionContainer.min {
+  max-height: 0;
+  top:-9999px;
+  z-index:-2;
+}
 .game {
 	padding: 0 2vw 0 2vw;
+  max-width:1000px;
+  margin: auto;
 }
 .game h2 {
-	font-size:3vw;
+	font-size: 36px;
 }
 .game p {
-	font-size: 2vw;
+	font-size: 24px;
 }
 .game img {
 	width: 100%;
-	max-width: 1000px;
+}
+.portfolioTitleContainer button {
+  float: right;
+  margin-top:1.5vw;
+  transition: transform 0.5s;
+}
+.portfolioTitleContainer button.min {
+  transform: rotate(-90deg);
+}
+.aboutMeContainer {
+	display: flex;
+  font-size: 1.5vw;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+.aboutMeContainer p {
+  padding: 20px;
+}
+.flex1 {
+	flex:1;
+}
+.flex2 {
+	flex:2;
+}
+.flex1 img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .backdrop .backtext {
+    padding: 10px 0px 30px 50px;
+    width: auto;
+  }
+  .backdrop .backname {
+    font-size: 24px;
+  }
+  .backdrop .backdesc {
+    font-size: 20px;
+  }
+  .portfolioTitleContainer p {
+    font-size: 18px;
+    margin: 4px 0;
+  }
+  .aboutMeContainer {
+    flex-direction: column;
+  }
+  .backdrop {
+    flex-direction: column;
+    height:auto;
+  }
+  .game h2 {
+    font-size: 18px;
+  }
+  .game p {
+    font-size: 16px;
+  }
+  .aboutMeContainer {
+    font-size: 16px;
+  }
 }
 @keyframes fadeInFast {
   0% { opacity: 0; }

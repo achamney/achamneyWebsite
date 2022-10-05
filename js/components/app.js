@@ -1,11 +1,12 @@
-//import * as game from "./game.js"
+
 let mainBox = "dc824c26-43d3-11ed-8d79-0ae52db41295";
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-		let state = { gameList: [], tab: 0};
+		let state = { gameList: [], tab: 0, gameContainerClass: "max"};
     this.submit = this.submit.bind(this);
     this.changeTab = this.changeTab.bind(this);
+    this.minimize = this.minimize.bind(this);
 		this.state = state;
 		window.makeGames = async function() {
 			var baba = await netService.make({name:"Baba is You"});
@@ -41,16 +42,24 @@ class App extends React.Component {
 		});
 		this.setState({ gameList: games.gameList });
 	}
+	minimize() {
+	}
 	render() {
     return <div className="appBody">
 				<Backdrop />
-				<div className="gameContentDisplay">
-				{this.state.gameList.map(g=>(
-					<Game game={g.game} key={g._id} ref={g.ref} tab={this.state.tab}/>
-				))}
-				</div>
-				<button onClick={this.changeTab}>Tab</button>
-				<button onClick={this.submit} style={{display:this.state.tab == 0?"none":"block"}}>Submit</button>
+				<Accordion title="My Recent Work:">
+					<div className="gameContentDisplay">
+						{this.state.gameList.map(g=>(
+							<Game game={g.game} key={g._id} ref={g.ref} tab={this.state.tab}/>
+						))}
+					</div>
+					<button onClick={this.changeTab}>Tab</button>
+					<button onClick={this.submit} style={{display:this.state.tab == 0?"none":"block"}}>Submit</button>
+				</Accordion>
+
+				<Accordion title="About Me:">
+					<AboutMe />
+				</Accordion>
 			</div>
   }
 }

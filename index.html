@@ -1,5 +1,6 @@
 <html class="ui-mobile-rendering">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
 	<link rel="stylesheet" href="css/main.css" />
   <title>Austin - Full Stack Developer</title>
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
@@ -9,12 +10,13 @@
 
 	<body >
     <div id="root"></div>
-
-    <script src="js/app.js" type="text/babel"></script>
+    <script src="js/components/app.js" type="text/babel"></script>
     <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/netcode.js"></script>
-    <script src="js/game.js" type="text/babel"></script>
-    <script src="js/backdrop.js" type="text/babel"></script>
+    <script src="js/components/accordion.js" type="text/babel"></script>
+    <script src="js/components/game.js" type="text/babel"></script>
+    <script src="js/components/aboutme.js" type="text/babel"></script>
+    <script src="js/components/backdrop.js" type="text/babel"></script>
     <script type="text/babel">
       const root = ReactDOM.createRoot(document.getElementById('root'))
       root.render(
