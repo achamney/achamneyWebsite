@@ -1,5 +1,8 @@
 
-let mainBox = "dc824c26-43d3-11ed-8d79-0ae52db41295";
+const mainBox = "dc824c26-43d3-11ed-8d79-0ae52db41295";
+const services = [{ title: "Custom RESTful JavaScript Websites", img: "./images/rest.png"},
+									{ title: "Wordpress With Custom Themes", img: "./images/wordpress.png"},
+									{ title: "PSD to HTML", img: "./images/psdtohtml.png"},];
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -47,7 +50,19 @@ class App extends React.Component {
 	render() {
     return <div className="appBody">
 				<Backdrop />
-				<Accordion title="My Recent Work:">
+				<Accordion title="My Services" className="services-container">
+					<div className="service-titles">
+					{services.map(s=>(
+						<div className="service" key={s.title}>{s.title}</div>
+					))}
+					</div>
+					<div className="service-imgs">
+					{services.map(s=>(
+							<img className="service" src={s.img} key={s.img}/>
+					))}
+					</div>
+				</Accordion>
+				<Accordion title="My Recent Work">
 					<div className="gameContentDisplay">
 						{this.state.gameList.map(g=>(
 							<Game game={g.game} key={g._id} ref={g.ref} tab={this.state.tab}/>
@@ -57,7 +72,7 @@ class App extends React.Component {
 					<button onClick={this.submit} style={{display:this.state.tab == 0?"none":"block"}}>Submit</button>
 				</Accordion>
 
-				<Accordion title="About Me:">
+				<Accordion title="About Me">
 					<AboutMe />
 				</Accordion>
 			</div>

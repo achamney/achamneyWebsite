@@ -12,7 +12,7 @@ class Accordion extends React.Component {
   		}
   }
   render() {
-    return <div>
+    return <div className={this.props.className}>
       <div className="portfolioTitleContainer">
         <p>{this.state.title}</p>
         <button onClick={this.minimize} className={`${this.state.minimizeClass}`}>v</button>

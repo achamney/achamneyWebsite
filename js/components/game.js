@@ -35,7 +35,7 @@ class Game extends React.Component {
 	render() {
     return <div className="game">
       <hr />
-      <a href={this.state.link} target="_blank"><h2> {this.state.name} </h2></a>
+      <a href={this.state.link} target="_blank"><p className="game-title"> {this.state.name} </p></a>
       <div style={{display:this.state.tab == 1?"none":"block"}}>
         <a href={this.state.link} target="_blank"><img src={this.state.img} /></a>
         <p>{this.state.description}

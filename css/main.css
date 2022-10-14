@@ -4,8 +4,28 @@
 }
 body
 {
+	font-family: 'open sans';
 	margin:0px;
 	background: #DDDDDD;
+}
+.services-container .service-titles, .services-container .service-imgs{
+  display:flex;
+}
+.services-container .service-imgs {
+  margin-bottom: 10px;
+}
+.services-container .accordionContainer {
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+.services-container .accordionContainer .service {
+  flex:1;
+  padding: 0.5vw 1vw;
+  font-size: 22px;
+}
+.services-container .accordionContainer img.service  {
+  width: calc(33% - 2vw);
 }
 .game a:link {
   text-decoration: none;
@@ -16,6 +36,7 @@ body
 }
 .game a:visited {
   text-decoration: none;
+  color: black;
 }
 
 .backdrop {
@@ -69,8 +90,8 @@ body
   max-width:1000px;
   margin: auto;
 }
-.game h2 {
-	font-size: 36px;
+.game .game-title {
+	font-size: 30px;
 }
 .game p {
 	font-size: 24px;
@@ -135,6 +156,9 @@ body
     font-size: 16px;
   }
   .aboutMeContainer {
+    font-size: 16px;
+  }
+  .services-container .accordionContainer .service {
     font-size: 16px;
   }
 }
