@@ -50,6 +50,7 @@ class App extends React.Component {
 	render() {
     return <div className="appBody">
 				<Backdrop />
+				<main aria-label="Services and Portfolio">
 				<Accordion title="My Services" className="services-container">
 					<div className="service-titles">
 					{services.map(s=>(
@@ -58,7 +59,7 @@ class App extends React.Component {
 					</div>
 					<div className="service-imgs">
 					{services.map(s=>(
-							<img className="service" src={s.img} key={s.img}/>
+							<img className="service" src={s.img} key={s.img} alt={"Service image describing " + s.title}/>
 					))}
 					</div>
 				</Accordion>
@@ -75,6 +76,7 @@ class App extends React.Component {
 				<Accordion title="About Me">
 					<AboutMe />
 				</Accordion>
+				</main>
 			</div>
   }
 }
